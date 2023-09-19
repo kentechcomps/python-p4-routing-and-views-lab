@@ -23,7 +23,7 @@ def count(param):
 
     return f'<pre>{numbers}</pre>'
 
-@app.route('/math/<num1> <operation> <num2>')
+@app.route('/math/<float:num1><operation><float:num2>')
 def math (num1 ,operation , num2):
     result = None
     if operation =='+':
